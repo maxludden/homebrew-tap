@@ -3,7 +3,7 @@ cask "ansicube" do
   name "ansicube"
   desc "Interactive ANSI 256-color explorer for the terminal"
   homepage "https://github.com/maxludden/ansiCube"
-  version "0.1.8"
+  version "0.1.5"
 
   livecheck do
     skip "Auto-generated on release."
@@ -14,22 +14,22 @@ cask "ansicube" do
   on_macos do
     on_intel do
       url "https://github.com/maxludden/ansiCube/releases/download/v#{version}/ansicube_#{version}_darwin_amd64.tar.gz"
-      sha256 "8f9671c2a44dcac649b4962dee3f3d4fe9463679df2c8546f70e50f70e5c9bdf"
+      sha256 "58fa2163d79abf1caa1d4e6c76874399b4c4d68e9ce9e5ae836cefb19c285092"
     end
     on_arm do
       url "https://github.com/maxludden/ansiCube/releases/download/v#{version}/ansicube_#{version}_darwin_arm64.tar.gz"
-      sha256 "810128911698ee1818a570ee1548f47798f8f73d2228003f75030031bf19639d"
+      sha256 "bac47bbb0f82c9d384ac2adf16ff88d310cfa1c8cfa8b4576905fe3dbe8de463"
     end
   end
 
   on_linux do
     on_intel do
       url "https://github.com/maxludden/ansiCube/releases/download/v#{version}/ansicube_#{version}_linux_amd64.tar.gz"
-      sha256 "99b4824d86fbfc970b7df23ae3dafe9fde6fc371629038832a2341933ef2bc5c"
+      sha256 "1223104ca37cad11ecd78d5e65b8bebca52cdf4c06c9fceb69980849d98950a8"
     end
     on_arm do
       url "https://github.com/maxludden/ansiCube/releases/download/v#{version}/ansicube_#{version}_linux_arm64.tar.gz"
-      sha256 "65203f872b66ecbfcb23a8787bcfcdac48e71072f293874c7e1d319d6832692b"
+      sha256 "0423c6b0c49d13cc8cd25035d914e238763683e51d4f99da3820b88f2a8ad1ca"
     end
   end
 
