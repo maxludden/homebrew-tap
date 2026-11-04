@@ -28,6 +28,15 @@ rich-gradient print 'Hello, World!' --rainbow
 rich-gradient --help
 ```
 
+### rich-gradient-cli
+
+Render files, URLs, stdin, and text with gradients from the command line.
+
+```bash
+brew install maxludden/tap/rich-gradient-cli
+gradient --help
+```
+
 ## Updating
 
 To update to the latest version:
