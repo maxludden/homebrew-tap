@@ -1,7 +1,7 @@
 class RichGradientCli < Formula
   include Language::Python::Virtualenv
 
-  desc "Render files, URLs, stdin, and text with rich-gradient from the command line"
+  desc "Render files, URLs, stdin, and text with rich-gradient from the command-line"
   homepage "https://github.com/maxludden/rich-gradient-cli"
   url "https://files.pythonhosted.org/packages/5c/f2/d638374ed93a8e7b41bc6be59201793e9dd9b900dbe3cffa24bd3442bec9/rich_gradient_cli-0.4.3.tar.gz"
   sha256 "0bd5ffa061b4028e02946d4dea8929f48fbd150331d130bf2ddcf392ea6af056"
