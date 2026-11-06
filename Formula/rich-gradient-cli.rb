@@ -1,18 +1,23 @@
 class RichGradientCli < Formula
   include Language::Python::Virtualenv
 
-  desc "Render files, URLs, stdin, and text with rich-gradient from the command line"
+  desc "Render files, URLs, stdin, and text with rich-gradient from the command-line"
   homepage "https://github.com/maxludden/rich-gradient-cli"
-  url "https://files.pythonhosted.org/packages/8c/37/a3b6ec5d407221a4f2848e357fc6e87cb2580d7c3bab80c8caaec072de32/rich_gradient_cli-0.3.0.tar.gz"
-  sha256 "be48027be0a504388b5b3c98cad3831aa4dc453e0eaf8fa7e654b45672889548"
+  url "https://files.pythonhosted.org/packages/29/91/cde1885e74bf350376ce8d36682c9da03ff2e8b116fbfc0a00612cbfdc46/rich_gradient_cli-0.4.0.tar.gz"
+  sha256 "e9a3ebf646ec03d0e86ebc6183419c8a2c718db0fab99c4423e8dc15b41e63a5"
   license "MIT"
 
   depends_on "rust" => :build # uv_build backend compiles from source
   depends_on "python@3.13"
 
-  resource "annotated-doc" do
-    url "https://files.pythonhosted.org/packages/5a/8e/38aa427ed5402449e226975b649c5dc73ccadfefeb95e6aecb8f8ea4b6b6/annotated_doc-0.0.5.tar.gz"
-    sha256 "c7e58ce09192557605d8bbd92836d7e1d520ac9580096042c0bfd197efacf1bb"
+  resource "amplitude-analytics" do
+    url "https://files.pythonhosted.org/packages/cb/86/08c31c588dc6601bdac591e3a709cf964ca9a5f32fcb8d2eb0be93fdfcf5/amplitude_analytics-1.3.0.tar.gz"
+    sha256 "47e685b5b49c95997cae059f7277b4792dbefe11c170e165d67c6a3f785b8e98"
+  end
+
+  resource "click" do
+    url "https://files.pythonhosted.org/packages/3d/fa/656b739db8587d7b5dfa22e22ed02566950fbfbcdc20311993483657a5c0/click-8.3.1.tar.gz"
+    sha256 "12ff4785d337a1bb490bb7e9c2b1ee5da3112e94a8622f26a6c77f5d2fc6842a"
   end
 
   resource "loguru" do
@@ -21,8 +26,8 @@ class RichGradientCli < Formula
   end
 
   resource "markdown-it-py" do
-    url "https://files.pythonhosted.org/packages/06/ff/7841249c247aa650a76b9ee4bbaeae59370dc8bfd2f6c01f3630c35eb134/markdown_it_py-4.2.0.tar.gz"
-    sha256 "04a21681d6fbb623de53f6f364d352309d4094dd4194040a10fd51833e418d49"
+    url "https://files.pythonhosted.org/packages/5b/f5/4ec618ed16cc4f8fb3b701563655a69816155e79e24a17b651541804721d/markdown_it_py-4.0.0.tar.gz"
+    sha256 "cb0a2b4aa34f932c007117b194e945bd74e0ec24133ceb5bac59009cda1cb9f3"
   end
 
   resource "mdurl" do
@@ -31,8 +36,8 @@ class RichGradientCli < Formula
   end
 
   resource "pygments" do
-    url "https://files.pythonhosted.org/packages/49/2e/ced460408999b33da6b31b0021b0f37d329e202d4169aeb164493778f25b/pygments-2.21.0.tar.gz"
-    sha256 "610ca751c9bc2492b38eb9a38a7fbc93edbbb2d7182edaf34e66ae493dee5c8c"
+    url "https://files.pythonhosted.org/packages/c3/b2/bc9c9196916376152d655522fdcebac55e66de6603a76a02bca1b6414f6c/pygments-2.20.0.tar.gz"
+    sha256 "6757cd03768053ff99f3039c1a36d6c0aa0b263438fcab17520b30a303a82b5f"
   end
 
   resource "rich" do
@@ -50,14 +55,24 @@ class RichGradientCli < Formula
     sha256 "026795728d4539f6776bdc64a5038a64f02f5ecc59e0eaa359dd18515a9d3ac1"
   end
 
+  resource "rich-rst" do
+    url "https://files.pythonhosted.org/packages/cf/0e/faf7c7e36630561e3e9611730c47510cd972dd5fde8f95941ff78f76accd/rich_rst-2.2.0.tar.gz"
+    sha256 "b1e6a67f8f694a6f36035624bf73e2b1a0a4be13edaf3ba5e654d9758b61073a"
+  end
+
   resource "shellingham" do
     url "https://files.pythonhosted.org/packages/58/15/8b3609fd3830ef7b27b655beb4b4e9c62313a4e8da8c676e142cc210d58e/shellingham-1.5.4.tar.gz"
     sha256 "8dbca0739d487e5bd35ab3ca4b36e11c4078f3a234bfce294b0a0291363404de"
   end
 
   resource "typer" do
-    url "https://files.pythonhosted.org/packages/03/51/d33db42cc72ffd8c30777547b42d01f0cbf9d95a770457698d0174b3ed71/typer-0.27.3.tar.gz"
-    sha256 "d0396f770a560ab1b0a8504e13b5f254b728cedb05c61cf0359e944e50ce8901"
+    url "https://files.pythonhosted.org/packages/36/bf/8825b5929afd84d0dabd606c67cd57b8388cb3ec385f7ef19c5cc2202069/typer-0.21.1.tar.gz"
+    sha256 "ea835607cd752343b6b2b7ce676893e5a0324082268b48f27aa058bdb7d2145d"
+  end
+
+  resource "typing-extensions" do
+    url "https://files.pythonhosted.org/packages/72/94/1a15dd82efb362ac84269196e94cf00f187f7ed21c242792a923cdb1c61f/typing_extensions-4.15.0.tar.gz"
+    sha256 "0cea48d173cc12fa28ecabc3b837ea3cf6f38c6d1136f85cbaaf598984861466"
   end
 
   def install
@@ -66,5 +81,6 @@ class RichGradientCli < Formula
 
   test do
     assert_match version.to_s, shell_output("#{bin}/gradient --version")
+    assert_match "hello", shell_output("#{bin}/gradient --colors 'red,orange' hello")
   end
 end
