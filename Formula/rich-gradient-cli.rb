@@ -3,8 +3,8 @@ class RichGradientCli < Formula
 
   desc "Render files, URLs, stdin, and text with rich-gradient from the command-line"
   homepage "https://github.com/maxludden/rich-gradient-cli"
-  url "https://files.pythonhosted.org/packages/5c/f2/d638374ed93a8e7b41bc6be59201793e9dd9b900dbe3cffa24bd3442bec9/rich_gradient_cli-0.4.3.tar.gz"
-  sha256 "0bd5ffa061b4028e02946d4dea8929f48fbd150331d130bf2ddcf392ea6af056"
+  url "https://files.pythonhosted.org/packages/4b/3c/ab471292d79692d51897b14973c99594f7ff51b3f8d434e2abe6afba77b3/rich_gradient_cli-0.4.4.tar.gz"
+  sha256 "96c57fbd300bbadf59e2b1843bed028535e4ea421f032f2fd9252b7afbe8a09f"
   license "MIT"
 
   depends_on "python@3.13"
@@ -50,8 +50,8 @@ class RichGradientCli < Formula
   end
 
   resource "rich-gradient" do
-    url "https://files.pythonhosted.org/packages/e1/a8/a84f927a0abce6b3035e09f0964e61fe22631cef8fc32aaab36d43cded2b/rich_gradient-0.4.3.tar.gz"
-    sha256 "0548c48adeab202a439911d0a8a7420cdf66b95dc3c31ccf6c59e935144c802a"
+    url "https://files.pythonhosted.org/packages/9b/4d/c718a532dc2168a7ad258cab0ea9cfe8c3daf385fb31c44db6d0802e4a1e/rich_gradient-0.4.5.tar.gz"
+    sha256 "ac618748456f496c862fcb78337636f400115491d8a96a2d139567249b106bd1"
   end
 
   resource "rich-rst" do
