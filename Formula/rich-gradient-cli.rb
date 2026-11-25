@@ -3,8 +3,8 @@ class RichGradientCli < Formula
 
   desc "Render files, URLs, stdin, and text with rich-gradient from the command-line"
   homepage "https://github.com/maxludden/rich-gradient-cli"
-  url "https://files.pythonhosted.org/packages/4b/3c/ab471292d79692d51897b14973c99594f7ff51b3f8d434e2abe6afba77b3/rich_gradient_cli-0.4.4.tar.gz"
-  sha256 "96c57fbd300bbadf59e2b1843bed028535e4ea421f032f2fd9252b7afbe8a09f"
+  url "https://files.pythonhosted.org/packages/0d/dc/a677b2ef1c614ee80233e78b202ab16f6b8dbb2e6ebec8d23b4ac8505ab2/rich_gradient_cli-0.4.6.tar.gz"
+  sha256 "3ecb1ab942da7fe70be74509d3ef88565c3410a177238de298615151435fe295"
   license "MIT"
 
   depends_on "python@3.13"
