@@ -34,8 +34,8 @@ cask "ansicube" do
   binary "ansicube"
 
   postflight_steps do
-    if OS.mac?
-      system_command "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "#{staged_path}/ansicube"]
+    on_macos do
+      run "/usr/bin/xattr", args: ["-dr", "com.apple.quarantine", "ansicube"], chdir: "."
     end
   end
 
