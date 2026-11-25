@@ -4,8 +4,20 @@ A Homebrew tap for maxludden's projects.
 
 ## Installation
 
+Add the tap, then trust it:
+
 ```bash
 brew tap maxludden/tap
+brew trust maxludden/tap
+```
+
+Homebrew won't load formulae or casks from a third-party tap until you trust it. Installing without `brew trust` fails with `Refusing to load formula ... from untrusted tap maxludden/tap`.
+
+To trust only what you install, trust each one instead of the whole tap:
+
+```bash
+brew trust --formula maxludden/tap/rich-gradient-cli
+brew trust --cask maxludden/tap/ansicube
 ```
 
 ## Casks
@@ -47,6 +59,8 @@ gradient 'Hello, World!'
 # Get help
 gradient --help
 ```
+
+New releases reach the tap about a day after they're published to [PyPI](https://pypi.org/project/rich-gradient-cli/), because Homebrew waits a day before it uses a new PyPI release. To get a release sooner, install it with `uv tool install rich-gradient-cli` or `pip install rich-gradient-cli`.
 
 > The standalone `rich-gradient` formula has been removed. Use `rich-gradient-cli` instead.
 >
